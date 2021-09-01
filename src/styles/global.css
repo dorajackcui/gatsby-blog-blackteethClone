@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Noto Serif SC', serif;
+}
+
+html, body {
+  min-height: fit-content;
+}
+body {
+  color: #000;
+}
+
+p {
+  margin: 16px auto;
+  line-height: 1.5em;
+}
+
+/* layout & nav */
+
+nav {
+  margin: 0.5rem;
+}
+
+ul {
+  display: flex;
+  margin: 0.5rem;
+  padding: 0px;
+  line-height: 60px;
+  width: 100%;
+  font-size: 2.2em;
+  flex-wrap: nowrap;
+  text-transform: none;
+  transition: all 0.3s;
+  justify-content: stretch;
+  background-color: white;
+}
+
+li {
+  background-color: white;
+  transition: all 0.4s ease-in-out;
+  flex-grow: 2;
+  flex-shrink: 1;
+  flex-basis: auto;
+  display: block;
+  margin: 0 0.25em 0.25em 0;
+  border: solid 1.5px black;
+}
+
+li:not(.home):hover {
+  flex-grow: 4;
+}
+
+a {
+  color: #000;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: block;
+}
+
+.home {
+  flex-grow: 1;
+}
+
+li:active {
+  background: rgb(65,64,64);
+  background: linear-gradient(270deg, rgba(65,64,64,1) 0%, rgba(172,172,172,1) 67%);  
+}
+
+footer {
+  text-align:center;
+  color: #bbb;
+  
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+

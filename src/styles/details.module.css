@@ -1,0 +1,47 @@
+.title {
+  font-size: 63px;
+  line-height: 72px;
+  margin-top: 80px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 60px;
+
+}
+.info {
+  display: block;
+  font-size: 2em;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+
+.details {
+  font-size: 24px;
+  padding-left: 17%;
+  padding-right: 17%;
+  margin-top: 45px;
+  line-height: 38px;
+  font-weight: 400;
+}
+
+.details p{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-top: 40px;
+  
+  
+}
+
+
+
+
+
+
+
