@@ -23,6 +23,7 @@ p {
 
 nav {
   margin: 0.5rem;
+  
 }
 
 ul {
@@ -46,8 +47,8 @@ li {
   flex-shrink: 1;
   flex-basis: auto;
   display: block;
-  margin: 0 0.25em 0.25em 0;
-  border: solid 1.5px black;
+  margin: 0 0.3em 0.3em 0;
+  border: solid 1px black;
 }
 
 li:not(.home):hover {
@@ -59,15 +60,18 @@ a {
   padding-left: 10px;
   padding-right: 10px;
   display: block;
+  height: auto;
 }
 
 .home {
   flex-grow: 1;
 }
 
-li:active {
+.active-page {
   background: rgb(65,64,64);
   background: linear-gradient(270deg, rgba(65,64,64,1) 0%, rgba(172,172,172,1) 67%);  
+  min-height: 65px;
+  /* background-color: red; */
 }
 
 footer {
@@ -78,3 +82,9 @@ footer {
   margin-bottom: 100px;
 }
 
+.content {
+  margin-left: 60px;
+  margin-right: 60px;
+  
+  
+}

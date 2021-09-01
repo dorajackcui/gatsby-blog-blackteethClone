@@ -4,22 +4,23 @@ import '../styles/global.css'
 
 export default function Navbar() {
 
+
   
 
   return (
     <nav>
       <ul>
         <li className="home" >
-         <Link to="/">Home</Link>
+         <Link activeClassName="active-page" to="/">Home</Link>
         </li>
         <li className="articles" >
-          <Link to="/articles">Traduction poems </Link>
+          <Link activeClassName="active-page" to="/articles">Traduction & Poems </Link>
         </li>
         <li className="projects" >
-          <Link to="/projects"> Projects </Link>
+          <Link activeClassName="active-page" to="/projects"> Projects </Link>
         </li>
         <li className="about" >
-          <Link to="/about">About</Link>
+          <Link activeClassName="active-page" to="/about">About</Link>
         </li>
       </ul>
     </nav>

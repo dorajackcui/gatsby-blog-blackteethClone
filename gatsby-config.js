@@ -6,7 +6,7 @@ module.exports = {
     title: "My Blog",
   },
   plugins: [
-    
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
