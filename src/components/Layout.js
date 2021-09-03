@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import '../styles/global.css'
 import { useStaticQuery, graphql } from "gatsby"
+import SEO from './SEO'
 
 
 export default function Layout({ children }) {
@@ -17,13 +18,18 @@ export default function Layout({ children }) {
   const { copyright } = data.site.siteMetadata
   
   return (
+
     <div className="layout">
+      <SEO />
       <Navbar />
       <div className="content">
         { children }
       </div>
       <footer>
-        <h4>{ copyright }</h4>
+        <h4>{ copyright }</h4> 
+        {/* <a href="https://github.com/dorajackcui">
+        
+        </a> */}
       </footer>
     </div>
   )

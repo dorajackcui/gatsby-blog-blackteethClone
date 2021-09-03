@@ -2,7 +2,7 @@ const path = require(`path`)
 
 exports.createPages = async ({ graphql, actions }) => {
 
-  const { data } = await graphql(`
+  const mdArticles = await graphql(`
     query Articles {
       allMarkdownRemark {
         nodes {
@@ -14,7 +14,7 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
-  data.allMarkdownRemark.nodes.forEach(node => {
+  mdArticles.data.allMarkdownRemark.nodes.forEach(node => {
     const slug = node.frontmatter.slug
     actions.createPage({
       path: '/articles/'+ node.frontmatter.slug,
@@ -22,5 +22,29 @@ exports.createPages = async ({ graphql, actions }) => {
       context: {slug},
     })
   })
+    
+  const doubanArticle = await graphql(`
+    query DoubanArticles {
+      allArticlesCsv {
+          nodes {
+          
+            id
+          
+          }
+      }
+    }
+  `)
+
+  doubanArticle.data.allArticlesCsv.nodes.forEach(node => {
+    const id = node.id
+    actions.createPage({
+      path: '/projects/'+ node.id,
+      component: path.resolve('./src/templates/douban_article.js'),
+      context: {id},
+    })
+  })
+  
+
 
 }
+

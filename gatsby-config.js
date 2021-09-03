@@ -9,6 +9,15 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `excel`,
+        path: `${__dirname}/src/excel/`,
+      },
+    },
+    `gatsby-transformer-csv`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -21,8 +30,6 @@ module.exports = {
               // base for generating different widths of each image.
               maxWidth: 500,
               loading:'lazy',
-              wrapperStyle: 'margin: 0;',
-
             },
           },
         ],
