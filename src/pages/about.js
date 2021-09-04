@@ -4,7 +4,9 @@ import Layout from '../components/Layout'
 export default function about() {
   return (
     <Layout>
-      About
+      <a href="https://github.com/dorajackcui"> 
+        my github
+      </a>
     </Layout>
   )
 }
