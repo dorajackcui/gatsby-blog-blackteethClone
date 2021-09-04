@@ -9,7 +9,7 @@ export default function projects({data}) {
 
   return (
     <Layout>
-      Project
+      
       <main>
         <section className={styles.articlesContainer}>
         {articles.map( article => (

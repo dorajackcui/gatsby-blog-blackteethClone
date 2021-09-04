@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import '../styles/global.css'
 import { useStaticQuery, graphql } from "gatsby"
-import SEO from './SEO'
+import Seo from './Seo'
 
 
 export default function Layout({ children }) {
@@ -20,7 +20,7 @@ export default function Layout({ children }) {
   return (
 
     <div className="layout">
-      <SEO />
+      <Seo />
       <Navbar />
       <div className="content">
         { children }

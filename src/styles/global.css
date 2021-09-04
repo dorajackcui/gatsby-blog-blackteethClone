@@ -7,24 +7,19 @@
   font-family: 'Noto Serif SC', serif;
 }
 
-html, body {
-  min-height: fit-content;
-}
-body {
-  color: #000;
-}
 
-p {
-  margin: 16px auto;
-  line-height: 1.5em;
-}
+
 
 /* layout & nav */
 
+.layout{
+  width: auto;
+
+}
 nav {
   margin: 0.5rem;
+  align-self: center;
   
-  width: 100%;
 }
 
 ul {
