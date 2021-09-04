@@ -1,4 +1,4 @@
-### [Gatsby Blog Cui](https://cui-blog.netlify.app/)
+## [Gatsby Blog Cui](https://cui-blog.netlify.app/)
 
 - [x] markdown support
 - [x] csv support 
