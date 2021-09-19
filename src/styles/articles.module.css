@@ -17,8 +17,10 @@
   padding-top: 14px;
   padding-bottom: 10px;
   display: block;
-  font-weight: 500;
+  font-weight: 400;
   transition: all 0.4s ease-in-out;
+  
+  z-index: 10;
 }
 
 .articleTitle:hover {
@@ -29,6 +31,7 @@
   
   align-self: flex-end;
   padding-bottom: 10px;
+  
 
 }
 

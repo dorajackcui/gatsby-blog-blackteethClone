@@ -8,13 +8,16 @@
 }
 
 
-
-
 /* layout & nav */
+
+html{
+  background-color: #FFFDFA;
+  /* background-color: black; */
+}
 
 .layout{
   width: auto;
-
+  
 }
 nav {
   margin: 0.5rem;
@@ -22,7 +25,7 @@ nav {
   
 }
 
-ul {
+nav ul {
   display: flex;
   margin: 0.5rem;
   padding: 0px;
@@ -33,11 +36,11 @@ ul {
   text-transform: none;
   transition: all 0.3s;
   justify-content: stretch;
-  background-color: white;
+  background-color: #FFFDFA;
 }
 
-li {
-  background-color: white;
+nav li {
+  background-color: #FFFDFA;
   transition: all 0.4s ease-in-out;
   flex-grow: 2;
   flex-shrink: 1;
@@ -77,11 +80,27 @@ footer {
   
   margin-top: 80px;
   margin-bottom: 100px;
+  
 }
 
 .content {
   margin-left: 60px;
   margin-right: 60px;
   
+}
+
+.backHome {
+  width: fit-content;
+  display:block;
+  margin: 1em 0 2em 1.5em;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 1em 1.5em;
+  transition: 0.2s;
+  border: solid 1px #FFFDFA;
   
+}
+
+.backHome:hover{
+  border: solid 1px black;
 }

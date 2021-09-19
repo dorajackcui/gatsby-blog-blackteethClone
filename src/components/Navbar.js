@@ -4,9 +4,6 @@ import '../styles/global.css'
 
 export default function Navbar() {
 
-
-  
-
   return (
     <nav>
       <ul>
@@ -14,7 +11,7 @@ export default function Navbar() {
          <Link activeClassName="active-page" to="/">Home</Link>
         </li>
         <li className="articles" >
-          <Link activeClassName="active-page" to="/articles">Traduction</Link>
+          <Link activeClassName="active-page" to="/articles">Traductions</Link>
         </li>
         <li className="projects" >
           <Link activeClassName="active-page" to="/projects"> Douban Archive </Link>

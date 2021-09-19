@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../components/Layout'
+import ArticleLayout from '../components/ArticleLayout'
 import * as styles from '../styles/details.module.css'
 import { graphql } from 'gatsby'
 
@@ -11,7 +11,7 @@ export default function ArticleDetails ({ data }){
   console.log(title)
 
   return (
-    <Layout>
+    <ArticleLayout>
       <h2 className={styles.title}>{title}</h2>
       <div className={styles.details}>
         <h3 className={styles.info}>{createdTime}</h3>
@@ -19,7 +19,7 @@ export default function ArticleDetails ({ data }){
         <div className={styles.content} dangerouslySetInnerHTML={{ __html: articleContent }} />
       </div>
       
-    </Layout>
+    </ArticleLayout>
   )
 }
 

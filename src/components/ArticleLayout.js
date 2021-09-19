@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './Navbar'
+import BackHome from './BackHome'
 import '../styles/global.css'
 import { useStaticQuery, graphql } from "gatsby"
 import Seo from './Seo'
@@ -21,11 +21,10 @@ export default function Layout({ children }) {
 
     <div className="layout">
       <Seo />
-      <Navbar />
+      <BackHome />
       <div className="content">
         { children }
       </div>
-      
     </div>
   )
 }

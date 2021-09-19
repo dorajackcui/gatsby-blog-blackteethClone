@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../components/Layout'
+import ArticleLayout from '../components/ArticleLayout'
 import * as styles from '../styles/details.module.css'
 import { graphql } from 'gatsby'
 
@@ -11,14 +11,14 @@ export default function ArticleDetails ({ data }){
   
 
   return (
-    <Layout>
+    <ArticleLayout>
       
       <div className={styles.details}>
         <h3 className={styles.info}>文：{stack} &nbsp; &nbsp; &nbsp; &nbsp;译：抑之</h3>
         <div className={styles.content} dangerouslySetInnerHTML={{ __html: html }} />
       </div>
       
-    </Layout>
+    </ArticleLayout>
   )
 }
 
