@@ -14,10 +14,10 @@ export default function Navbar() {
          <Link activeClassName="active-page" to="/">Home</Link>
         </li>
         <li className="articles" >
-          <Link activeClassName="active-page" to="/articles">Traduction & Poems </Link>
+          <Link activeClassName="active-page" to="/articles">Traduction</Link>
         </li>
         <li className="projects" >
-          <Link activeClassName="active-page" to="/projects"> Projects </Link>
+          <Link activeClassName="active-page" to="/projects"> Douban Archive </Link>
         </li>
         <li className="about" >
           <Link activeClassName="active-page" to="/about">About</Link>

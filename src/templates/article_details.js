@@ -12,10 +12,9 @@ export default function ArticleDetails ({ data }){
 
   return (
     <Layout>
-      <h2 className={styles.title}>{title}</h2>
+      
       <div className={styles.details}>
-        <h3 className={styles.info}>{stack}</h3>
-        <hr/>
+        <h3 className={styles.info}>文：{stack} &nbsp; &nbsp; &nbsp; &nbsp;译：抑之</h3>
         <div className={styles.content} dangerouslySetInnerHTML={{ __html: html }} />
       </div>
       
