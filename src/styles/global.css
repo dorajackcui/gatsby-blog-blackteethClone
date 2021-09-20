@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap');
+:root{
+  --bg:#FFFDFA;
+}
 
 *{
   margin: 0;
@@ -7,13 +10,16 @@
   font-family: 'Noto Serif SC', serif;
 }
 
-
 /* layout & nav */
 
-html{
-  background-color: #FFFDFA;
+body {
+  background-color: var(--bg);
   /* background-color: black; */
 }
+
+/* .readColor {
+  background-color: #fff1e5;
+} */
 
 .layout{
   width: auto;
@@ -36,11 +42,11 @@ nav ul {
   text-transform: none;
   transition: all 0.3s;
   justify-content: stretch;
-  background-color: #FFFDFA;
+  
 }
 
 nav li {
-  background-color: #FFFDFA;
+  
   transition: all 0.4s ease-in-out;
   flex-grow: 2;
   flex-shrink: 1;
@@ -68,7 +74,7 @@ a {
 
 .active-page {
   background: rgb(65,64,64);
-  background: linear-gradient(270deg, rgba(65,64,64,1) 0%, rgba(172,172,172,1) 67%);  
+  background: linear-gradient(270deg, rgba(65,64,64,0.8) 0%, rgba(172,172,172,1) 67%);  
   min-height: 65px;
   /* background-color: red; */
 }
@@ -97,7 +103,7 @@ footer {
   font-weight: 400;
   padding: 1em 1.5em;
   transition: 0.2s;
-  border: solid 1px #FFFDFA;
+  border: solid 1px rgba(255, 255, 255, 0);
   
 }
 

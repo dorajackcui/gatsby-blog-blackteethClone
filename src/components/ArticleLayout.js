@@ -16,9 +16,10 @@ export default function Layout({ children }) {
     }
   `)
   const { copyright } = data.site.siteMetadata
-  
-  return (
 
+  
+
+  return (
     <div className="layout">
       <Seo />
       <BackHome />
