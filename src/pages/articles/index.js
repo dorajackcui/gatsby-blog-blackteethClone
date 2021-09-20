@@ -33,7 +33,7 @@ export default index
 
 export const query = graphql`
   query ArticlesQuery {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}){
       nodes {
         frontmatter {
           title

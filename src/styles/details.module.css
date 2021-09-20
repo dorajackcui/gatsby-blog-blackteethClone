@@ -66,7 +66,7 @@ hr {
   background-color: black;
 }
 
-img {
+.details img {
   width:65%;
   height: auto;
   display: block;
