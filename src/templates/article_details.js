@@ -11,7 +11,7 @@ export default function ArticleDetails ({ data }){
   
 
   return (
-    <ArticleLayout>
+    <ArticleLayout title={title}>
       
       <div className={styles.details}>
         <h3 className={styles.info}>文：{stack} &nbsp; &nbsp; &nbsp; &nbsp;译：抑之</h3>

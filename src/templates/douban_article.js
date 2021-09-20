@@ -8,10 +8,8 @@ export default function ArticleDetails ({ data }){
   
   const { title, articleContent, createdTime } = data.articlesCsv
   
-  console.log(title)
-
   return (
-    <ArticleLayout>
+    <ArticleLayout title={title}>
       <h2 className={styles.title}>{title}</h2>
       <div className={styles.details}>
         <h3 className={styles.info}>{createdTime}</h3>

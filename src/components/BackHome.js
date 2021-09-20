@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <nav >
       
-      <Link className="backHome" to="/articles">
+      <Link className="backHome" to="../">
         <h4>Back</h4>
       </Link>
       

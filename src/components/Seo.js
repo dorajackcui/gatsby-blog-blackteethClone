@@ -1,13 +1,57 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import PropTypes from "prop-types"
+import { useStaticQuery, graphql } from 'gatsby'
 
-export default function Seo() {
+
+
+const Seo= ({description, title}) => {
+  const { site } = useStaticQuery(
+    graphql`
+      query metadataSeo{
+        site {
+          siteMetadata {
+            title
+            description
+            
+          }
+        }
+      }
+    `
+  )
+
+  const metaDescription = description || site.siteMetadata.description
+  const metaTitle =  title || site.siteMetadata.title
+  
+
   return (
-    <Helmet>
-        <meta charSet="utf-8" />
-        <meta name="referrer" content="no-referrer"/>
-        <title>CUI Zhiyang</title>
-        <link rel="canonical" href="http://mysite.com/example" />
+    <Helmet title={metaTitle} >
+      <meta name="description" content={metaDescription} />
+      <meta charSet="utf-8" />
+      <meta name="referrer" content="no-referrer"/>
+      <link rel="icon" 
+      type="image/png" 
+      href="/magic.png"/>
+      {metaTitle && <meta property="og:title" content={metaTitle} />}
+      {metaDescription && (
+        <meta property="og:description" content={metaDescription} />
+      )}
+
     </Helmet>
   )
+}
+
+export default Seo
+
+Seo.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  image: PropTypes.string,
+ 
+}
+Seo.defaultProps = {
+  title: null,
+  description: null,
+  image: null,
+  
 }

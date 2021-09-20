@@ -1,9 +1,11 @@
 module.exports = {
   siteMetadata: {
-    description: 'Blog',
+    title: "CUI zhiyang",
+    description: 'cui zhiyang blog',
+    image: "./static/magic.png", 
+
     copyright: 'This website is copyright 2021 Cui Zhiyang',
     contact: 'dorajackcui@gmail.com',
-    title: "My Blog",
   },
   plugins: [
     `gatsby-plugin-image`,
