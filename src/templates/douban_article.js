@@ -2,6 +2,7 @@ import React from 'react'
 import ArticleLayout from '../components/ArticleLayout'
 import * as styles from '../styles/details.module.css'
 import { graphql } from 'gatsby'
+import ScrollToTop from 'react-scroll-up'
 
 
 export default function ArticleDetails ({ data }){
@@ -15,6 +16,10 @@ export default function ArticleDetails ({ data }){
         <h3 className={styles.info}>{createdTime}</h3>
         <hr/>
         <div className={styles.content} dangerouslySetInnerHTML={{ __html: articleContent }} />
+        <ScrollToTop 
+          showUnder={1000}>
+          <span className={styles.scrollUp}>↑</span>
+        </ScrollToTop>
       </div>
       
     </ArticleLayout>

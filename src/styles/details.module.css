@@ -97,7 +97,12 @@ hr ~ ol {
   margin-right: 1em;
   background-color: white;
   border: solid 1px black;
-  
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.scrollUp:hover{
+  opacity: 1;
 }
 
 /* ipad pro */
