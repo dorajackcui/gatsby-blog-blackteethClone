@@ -8,16 +8,16 @@ export default function Navbar() {
     <nav>
       <ul>
         <li className="home" >
-         <Link activeClassName="active-page" to="/">Home</Link>
+         <Link className="link" activeClassName="active-page" to="/">Home</Link>
         </li>
-        <li className="articles" >
-          <Link activeClassName="active-page" to="/articles">Traductions</Link>
+        <li >
+          <Link className="link" activeClassName="active-page" to="/articles">Traductions</Link>
         </li>
-        <li className="projects" >
-          <Link activeClassName="active-page" to="/projects"> Douban Archive </Link>
+        <li >
+          <Link className="link" activeClassName="active-page" to="/projects"> Douban Archive </Link>
         </li>
-        <li className="about" >
-          <Link activeClassName="active-page" to="/about">About</Link>
+        <li >
+          <Link className="link" activeClassName="active-page" to="/about">About</Link>
         </li>
       </ul>
     </nav>

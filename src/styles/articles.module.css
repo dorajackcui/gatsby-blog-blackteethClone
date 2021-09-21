@@ -12,15 +12,14 @@
 }
 
 .articleTitle {
-  font-size: 63px;
+  font-size: 64px;
   line-height: 1.1;
   width: 79%;
   padding-top: 14px;
   padding-bottom: 10px;
   display: block;
-  font-weight: 400;
+  font-weight: 500;
   transition: all 0.4s ease-in-out;
-  
   z-index: 10;
 }
 
@@ -31,10 +30,31 @@
 }
 
 .articleDetails {
-  
+  width: 21%;
   align-self: flex-end;
   padding-bottom: 10px;
+  font-weight: 400;
   
-
 }
 
+@media screen and (max-width: 700px) {
+
+  .article {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .articleTitle {
+    font-size: 1.5em;
+    line-height: 1.3em;
+    padding-top: 5px;
+    padding-bottom: 3px;
+  }
+
+  .articleDetails {
+    font-size: 0.5em;
+    width: 21%;
+    text-align: end;
+    padding: auto;
+  }
+}

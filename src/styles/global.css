@@ -38,26 +38,24 @@ nav ul {
   line-height: 60px;
   width: 100%;
   font-size: 2.2em;
-  flex-wrap: nowrap;
   text-transform: none;
   transition: all 0.3s;
   justify-content: stretch;
-  
+  align-items: center;
 }
 
 nav li {
-  
   transition: all 0.4s ease-in-out;
-  flex-grow: 2;
+  flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: auto;
   display: block;
   margin: 0 0.3em 0.3em 0;
   border: solid 1px black;
+  height: 100%;
 }
 
 li:not(.home):hover {
-  flex-grow: 4;
+  flex-grow: 2;
 }
 
 a {
@@ -65,17 +63,17 @@ a {
   padding-left: 10px;
   padding-right: 10px;
   display: block;
-  height: auto;
+  
 }
 
 .home {
-  flex-grow: 1;
+  flex-grow: 0.5;
 }
 
 .active-page {
   background: rgb(65,64,64);
   background: linear-gradient(270deg, rgba(65,64,64,0.8) 0%, rgba(172,172,172,1) 67%);  
-  min-height: 65px;
+  
   /* background-color: red; */
 }
 
@@ -95,6 +93,8 @@ footer {
   
 }
 
+/* article back home button */
+
 .backHome {
   width: fit-content;
   display:block;
@@ -104,9 +104,42 @@ footer {
   padding: 1em 1.5em;
   transition: 0.2s;
   border: solid 1px rgba(255, 255, 255, 0);
-  
 }
 
 .backHome:hover{
   border: solid 1px black;
+}
+
+
+@media screen and (max-width: 850px){
+  nav li{
+    border: none;
+  }
+
+  nav li:not(:first-child){
+    border-left: solid 1px black;
+  }
+} 
+
+@media screen and (max-width: 700px) {
+  nav ul {
+    
+    font-size: 0.8em;
+    line-height: 1em;
+    font-weight: 600;
+  }
+
+  .link {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  .content {
+    margin-left: 5%;
+    margin-right:  5%;
+  }
+
+  .backHome { 
+    margin: 0;
+    font-size: 0.7em;
+  }
 }

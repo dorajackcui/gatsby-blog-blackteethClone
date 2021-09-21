@@ -7,14 +7,13 @@ import { graphql } from 'gatsby'
 export default function ArticleDetails ({ data }){
   
   const { html, excerpt:description } = data.markdownRemark
-  const { title, stack } = data.markdownRemark.frontmatter
-  
+  const { title, stack } = data.markdownRemark.frontmatter  
 
   return (
     <ArticleLayout title={title} description={description}>
       
       <div className={styles.details}>
-        <h3 className={styles.info}>文：{stack} &nbsp; &nbsp; &nbsp; &nbsp;译：抑之</h3>
+        <div className={styles.info}>文：{stack} &nbsp; &nbsp; &nbsp; &nbsp;译：抑之</div>
         <div className={styles.content} dangerouslySetInnerHTML={{ __html: html }} />
       </div>
       

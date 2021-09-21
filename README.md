@@ -1,6 +1,6 @@
 ## [Gatsby Blog Cui](https://cui-blog.netlify.app/)
 
-
+- [x] mobile responsive
 - [x] seo 
 - [x] format design -> ch/en mixed format ?
 - [x] markdown support
