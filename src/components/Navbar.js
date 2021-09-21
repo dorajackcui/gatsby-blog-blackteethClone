@@ -7,16 +7,16 @@ export default function Navbar() {
   return (
     <nav>
       <ul>
-        <li className="home" >
+        <li className="home" key="home">
          <Link className="link" activeClassName="active-page" to="/">Home</Link>
         </li>
-        <li >
+        <li key="traductions">
           <Link className="link" activeClassName="active-page" to="/articles">Traductions</Link>
         </li>
-        <li >
+        <li key="archive">
           <Link className="link" activeClassName="active-page" to="/projects"> Douban Archive </Link>
         </li>
-        <li >
+        <li key="about">
           <Link className="link" activeClassName="active-page" to="/about">About</Link>
         </li>
       </ul>

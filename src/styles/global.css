@@ -119,6 +119,8 @@ footer {
   nav li:not(:first-child){
     border-left: solid 1px black;
   }
+
+  
 } 
 
 @media screen and (max-width: 700px) {

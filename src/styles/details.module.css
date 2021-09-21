@@ -83,20 +83,38 @@ hr {
 
 }
 
+
+
+hr ~ ol {
+  padding: 0 5%; 
+}
+
 .scrollUp{
   font-size: 18px;
   font-weight: 600;
-  font-style: bord;
   padding: 1px 5px;
-  background-color: white;
-  border: solid 1px black;
   margin-bottom: 1em;
   margin-right: 1em;
+  background-color: white;
+  border: solid 1px black;
   
 }
 
+/* ipad pro */
+@media screen and (max-width: 1024px) {
+  .details {
+    font-size: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 45px;
+    font-weight: 400;
+  }
 
-@media screen and (max-width: 700px) {
+}
+
+
+/* mobile */
+@media screen and (max-width: 500px) {
 
   .details {
     font-size: 16px;
