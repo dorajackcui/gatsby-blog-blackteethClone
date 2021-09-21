@@ -83,6 +83,17 @@ hr {
 
 }
 
+.scrollUp{
+  font-size: 18px;
+  font-weight: 600;
+  font-style: bord;
+  padding: 1px 5px;
+  background-color: white;
+  border: solid 1px black;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  
+}
 
 
 @media screen and (max-width: 700px) {
