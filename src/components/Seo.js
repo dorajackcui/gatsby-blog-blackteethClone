@@ -11,9 +11,9 @@ const Seo= ({description, title}) => {
       query metadataSeo{
         site {
           siteMetadata {
-            title
-            description
-            
+            title,
+            description,
+            titleTemplate,
           }
         }
       }
@@ -22,10 +22,11 @@ const Seo= ({description, title}) => {
 
   const metaDescription = description || site.siteMetadata.description
   const metaTitle =  title || site.siteMetadata.title
+  const titleTemplate = site.siteMetadata.titleTemplate
   
 
   return (
-    <Helmet title={metaTitle} >
+    <Helmet title={metaTitle} titleTemplate={titleTemplate}>
       <meta name="description" content={metaDescription} />
       <meta charSet="utf-8" />
       <meta name="referrer" content="no-referrer"/>

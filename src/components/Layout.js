@@ -5,7 +5,7 @@ import '../styles/global.css'
 import Seo from './Seo'
 
 
-export default function Layout({ children, title }) {
+export default function Layout({ description, children, title }) {
   // const data = useStaticQuery(graphql`
   //   {
   //     site {
@@ -21,7 +21,7 @@ export default function Layout({ children, title }) {
   return (
 
     <div className="layout">
-      <Seo title={title}/>
+      <Seo title={title} description={description}/>
       <Navbar />
       <div className="content">
         { children }

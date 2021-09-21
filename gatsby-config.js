@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: "CUI zhiyang",
-    description: 'cui zhiyang blog',
+    title: "抑之",
+    description: "cui zhiyang's blog",
     image: "./static/magic.png", 
-
+    titleTemplate: "%s ▞ cui zhiyang",
     copyright: 'This website is copyright 2021 Cui Zhiyang',
     contact: 'dorajackcui@gmail.com',
   },
