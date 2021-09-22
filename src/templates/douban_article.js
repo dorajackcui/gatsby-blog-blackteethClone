@@ -11,7 +11,7 @@ export default function ArticleDetails ({ data }){
   
   return (
     <ArticleLayout title={title}>
-      <h2 className={styles.title}>{title}</h2>
+      <div className={styles.title}>{title}</div>
       <div className={styles.details}>
         <h3 className={styles.info}>{createdTime}</h3>
         <hr/>

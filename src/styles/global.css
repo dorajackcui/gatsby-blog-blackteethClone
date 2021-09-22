@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap');
+
 :root{
   --bg:#FFFDFA;
 }
@@ -11,15 +12,13 @@
 }
 
 /* layout & nav */
+html{
+  font-size: 16px;
+}
 
 body {
   background-color: var(--bg);
-  /* background-color: black; */
 }
-
-/* .readColor {
-  background-color: #fff1e5;
-} */
 
 .layout{
   width: auto;
@@ -28,7 +27,6 @@ body {
 nav {
   margin: 0.5rem;
   align-self: center;
-  
 }
 
 nav ul {
@@ -37,7 +35,8 @@ nav ul {
   padding: 0px;
   line-height: 60px;
   width: 100%;
-  font-size: 2.2em;
+  font-size: 2em;
+  font-weight: 200;
   text-transform: none;
   transition: all 0.3s;
   justify-content: stretch;
@@ -63,7 +62,6 @@ a {
   padding-left: 10px;
   padding-right: 10px;
   display: block;
-  
 }
 
 .home {
@@ -90,7 +88,6 @@ footer {
 .content {
   margin-left: 60px;
   margin-right: 60px;
-  
 }
 
 /* article back home button */
@@ -128,7 +125,6 @@ footer {
     
     font-size: 0.8em;
     line-height: 1em;
-    font-weight: 600;
   }
 
   .link {

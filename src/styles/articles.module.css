@@ -1,3 +1,4 @@
+
 .articlesContainer {
   display: flex;
   flex-direction: column;
@@ -18,13 +19,13 @@
   padding-top: 14px;
   padding-bottom: 10px;
   display: block;
-  font-weight: 500;
+  font-weight: 400;
   transition: all 0.4s ease-in-out;
   z-index: 10;
 }
 
 .article:hover {
-  /* transform:translateX(5rem); */
+  
   background: rgb(65,64,64);
   background: linear-gradient(100deg, rgba(65, 64, 64, 0.6) 11%, rgba(172,172,172,1) 100%);
 }
