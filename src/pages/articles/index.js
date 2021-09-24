@@ -13,13 +13,15 @@ function index({data}) {
       <main>
         <section className={styles.articlesContainer}>
         {articles.map( article => (
-          <Link to={"/articles/" + article.frontmatter.slug} key={article.id} className={styles.article}>
+          <Link to={"/articles/" + article.frontmatter.slug} key={article.frontmatter.slug} className={styles.article}>
+            
             <div className={styles.articleTitle}>
               {article.frontmatter.title}
             </div>
             <div className={styles.articleDetails}>
-              {article.frontmatter.stack}
+              {article.frontmatter.stack}  
             </div>
+            
           </Link>
         ))}
 
@@ -39,6 +41,7 @@ export const query = graphql`
           title
           stack
           slug
+          
         }
       }
     }

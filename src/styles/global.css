@@ -24,6 +24,7 @@ body {
   width: auto;
   
 }
+
 nav {
   margin: 0.5rem;
   align-self: center;
@@ -91,7 +92,6 @@ footer {
 }
 
 /* article back home button */
-
 .backHome {
   width: fit-content;
   display:block;
@@ -108,11 +108,16 @@ footer {
 }
 
 
-@media screen and (max-width: 850px){
+/* mobile screen */
+@media screen and (max-width: 1024px){
   nav li{
     border: none;
+    
   }
-
+  .link {
+    font-size: 26px;
+    font-weight: 100;
+  }
   nav li:not(:first-child){
     border-left: solid 1px black;
   }
@@ -120,16 +125,18 @@ footer {
   
 } 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
+  
   nav ul {
-    
-    font-size: 0.8em;
+    margin: 0;
+    font-size: 12px;
     line-height: 1em;
   }
 
   .link {
-    font-size: 1em;
+    font-size: 13px;
     line-height: 1.5em;
+    font-weight: 100;
   }
   .content {
     margin-left: 5%;

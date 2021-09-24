@@ -9,7 +9,14 @@
   border-bottom: solid 1px black ;
   padding-top: 12px;
   padding-bottom: 12px;
+  position: relative;
   display: flex;
+}
+
+.article:hover {
+  
+  background: rgb(65,64,64);
+  background: linear-gradient(100deg, rgba(65, 64, 64, 0.6) 11%, rgba(172,172,172,1) 100%);
 }
 
 .articleTitle {
@@ -24,12 +31,6 @@
   z-index: 10;
 }
 
-.article:hover {
-  
-  background: rgb(65,64,64);
-  background: linear-gradient(100deg, rgba(65, 64, 64, 0.6) 11%, rgba(172,172,172,1) 100%);
-}
-
 .articleDetails {
   width: 21%;
   align-self: flex-end;
@@ -38,8 +39,7 @@
   
 }
 
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1024px) {
 
   .article {
     padding-top: 6px;
@@ -47,14 +47,36 @@
   }
 
   .articleTitle {
-    font-size: 1.5em;
+    font-size: 48px;
+    line-height: 1.3em;
+    padding-top: 7px;
+    padding-bottom: 4px;
+  }
+
+  .articleDetails {
+    font-size: 16px;
+    width: 21%;
+    text-align: end;
+    padding: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .article {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .articleTitle {
+    font-size: 24px;
     line-height: 1.3em;
     padding-top: 5px;
     padding-bottom: 3px;
   }
 
   .articleDetails {
-    font-size: 0.5em;
+    font-size: 10px;
     width: 21%;
     text-align: end;
     padding: auto;

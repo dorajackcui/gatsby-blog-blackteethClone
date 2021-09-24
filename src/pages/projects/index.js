@@ -7,6 +7,7 @@ export default function projects({data}) {
   
   const articles = data.allArticlesCsv.nodes
 
+
   return (
     <Layout>
       
