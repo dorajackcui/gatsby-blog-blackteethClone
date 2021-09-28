@@ -38,7 +38,7 @@ exports.createPages = async ({ graphql, actions }) => {
   doubanArticle.data.allArticlesCsv.nodes.forEach(node => {
     const id = node.id
     actions.createPage({
-      path: '/projects/'+ node.id,
+      path: '/douban/'+ node.id,
       component: path.resolve('./src/templates/douban_article.js'),
       context: {id},
     })
