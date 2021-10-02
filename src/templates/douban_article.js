@@ -7,15 +7,19 @@ import ScrollToTop from 'react-scroll-up'
 
 export default function ArticleDetails ({ data }){
   
-  const { title, articleContent, createdTime } = data.articlesCsv
+  const { html, excerpt:description } = data.markdownRemark
+  const { title, date }  = data.markdownRemark.frontmatter  
+  
   
   return (
-    <ArticleLayout title={title}>
+    <ArticleLayout title={title} description={description}>
+      
       <div className={styles.title}>{title}</div>
+
       <div className={styles.details}>
-        <h3 className={styles.info}>{createdTime}</h3>
+        <h3 className={styles.info}>{date}</h3>
         <hr/>
-        <div className={styles.content} dangerouslySetInnerHTML={{ __html: articleContent }} />
+        <div className={styles.content} dangerouslySetInnerHTML={{ __html: html }} />
         <ScrollToTop 
           showUnder={1000}>
           <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" className={styles.scrollUp} viewBox="0 0 16 16">
@@ -30,12 +34,15 @@ export default function ArticleDetails ({ data }){
 
 
 export const articleQuery = graphql`
-  query DoubanArticleCopy($id: String = "") {
-    articlesCsv(id: {eq: $id}) {
-      articleContent
-      createdTime(fromNow: true)
-      title
+  query postDetails($slug: String) {
+    markdownRemark(frontmatter: {slug: {eq: $slug}}) {
+      excerpt(pruneLength: 160)
+      html
+      frontmatter {
+        author
+        title
+        date(formatString: "YYYY-MM-DD")
+      }
     }
   }
-
 `

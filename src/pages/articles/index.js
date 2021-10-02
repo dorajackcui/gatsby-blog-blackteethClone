@@ -19,7 +19,7 @@ function index({data}) {
               {article.frontmatter.title}
             </div>
             <div className={styles.articleDetails}>
-              {article.frontmatter.stack}  
+              {article.frontmatter.author}  
             </div>
             
           </Link>
@@ -34,14 +34,16 @@ function index({data}) {
 export default index
 
 export const query = graphql`
-  query ArticlesQuery {
-    allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}){
+  query articlesQuery {
+    allMarkdownRemark(
+      sort: {fields: frontmatter___date, order: DESC}
+      filter: {frontmatter: {stack: {eq: "traduction"}}}
+      ){
       nodes {
         frontmatter {
           title
-          stack
+          author
           slug
-          
         }
       }
     }

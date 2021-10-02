@@ -4,23 +4,23 @@ import { Link, graphql } from 'gatsby'
 import * as styles from '../../styles/articles.module.css'
 
 export default function douban({data}) {
-  
-  const articles = data.allArticlesCsv.nodes
 
+  const articles = data.allMarkdownRemark.nodes
 
   return (
     <Layout>
-      
       <main>
         <section className={styles.articlesContainer}>
         {articles.map( article => (
-          <Link to={"/douban/" + article.id} key={article.id} className={styles.article}>
+          <Link to={"/douban/" + article.frontmatter.slug} key={article.frontmatter.slug} className={styles.article}>
+            
             <div className={styles.articleTitle}>
-              {article.title}
+              {article.frontmatter.title}
             </div>
             <div className={styles.articleDetails}>
-              {article.createdTime}
+              {article.frontmatter.date}  
             </div>
+            
           </Link>
         ))}
 
@@ -30,15 +30,25 @@ export default function douban({data}) {
   )
   }
 
-export const query = graphql`
-  query Douban {
-    allArticlesCsv {
+  export const query = graphql`
+  query postsQuery {
+    allMarkdownRemark(
+      sort: {fields: frontmatter___date, order: DESC}
+      filter: {frontmatter: {stack: {eq: "cuicuizone"}}}
+      ){
       nodes {
-        title
-        createdTime(fromNow: true)
-        id
+        frontmatter {
+          title
+          
+          slug
+          date(fromNow: true)
+        }
       }
     }
-  }  
+  }
 `
+
+
+
+
 

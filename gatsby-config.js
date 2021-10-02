@@ -13,14 +13,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `excel`,
-        path: `${__dirname}/src/excel/`,
-      },
-    },
-    `gatsby-transformer-csv`,
-    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
