@@ -93,12 +93,11 @@ footer {
 
 /* article back home button */
 .backHome {
+  background-color: inherit;
   width: fit-content;
   display:block;
-  margin: 1em 0 2em 1.5em;
-  font-size: 16px;
-  font-weight: 400;
-  padding: 1em 1.5em;
+  margin: 1.2em 0 2em 1.5em;
+  padding: 0.5em 1.2em 0.3em 1.2em;
   transition: 0.2s;
   border: solid 1px rgba(255, 255, 255, 0);
 }
@@ -146,6 +145,5 @@ footer {
 
   .backHome { 
     margin: 0;
-    font-size: 0.7em;
   }
 }
