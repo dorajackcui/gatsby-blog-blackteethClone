@@ -41,7 +41,7 @@ export const articleQuery = graphql`
       frontmatter {
         author
         title
-        date(formatString: "YYYY-MM-DD")
+        date(formatString: "DD MMMM YYYY")
       }
     }
   }

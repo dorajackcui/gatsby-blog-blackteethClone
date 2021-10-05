@@ -65,7 +65,7 @@ hr {
 }
 
 .details img {
-  width:65%;
+  width:60%;
   height: auto;
   display: block;
   margin-left: auto;
@@ -79,7 +79,7 @@ hr {
   color:#d584a1;
   cursor: pointer;
   text-decoration: none;
-  display: inline-block;
+  display: inline;
   letter-spacing: normal;
 }
 
@@ -132,12 +132,12 @@ hr {
   background-color: rgba(255, 217, 0, 0.5);
 }
 
-.modalContent a {
+.modalContent a{
   padding:0;
   color:#d584a1;
   cursor: pointer;
   text-decoration: none;
-  display: inline-block;
+  display: inline;
   letter-spacing: normal;
 }
 
