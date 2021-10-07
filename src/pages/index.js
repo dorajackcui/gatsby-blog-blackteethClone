@@ -16,9 +16,11 @@ const customStyles = {
     margin:" 10% auto",
     borderRadius:"0",
     border:'none',
-    backgroundColor: 'rgba(255, 253, 250, 0.95)',
+    backgroundColor: 'rgba(255, 253, 250, 0.85)',
     width:"90%",
     maxWidth:"750px",
+    backdropFilter: "blur(8px) saturate(80%)",
+    
   },
 };
 
@@ -41,6 +43,7 @@ export default function Index({data}) {
     setIsOpen(false);
   }
   Modal.setAppElement('body');
+
   return (
     <Layout>
       <center style={{marginTop:'25vh'}}>
