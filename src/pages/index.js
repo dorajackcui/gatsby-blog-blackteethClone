@@ -1,4 +1,4 @@
-import { StaticImage } from 'gatsby-plugin-image'
+// import { StaticImage } from 'gatsby-plugin-image'
 import React, {useState} from 'react'
 import Layout from '../components/Layout'
 import Modal from 'react-modal'
@@ -13,17 +13,24 @@ const customStyles = {
   content: {
     position: 'absolute',
     inset:'0px',
-    margin:" 10% auto",
+    margin:" 10% auto 4%",
     borderRadius:"0",
     border:'none',
-    backgroundColor: 'rgba(255, 253, 250, 0.85)',
+    backgroundColor: 'rgba(255, 253, 250, 0.75)',
     width:"90%",
-    maxWidth:"750px",
-    backdropFilter: "blur(8px) saturate(80%)",
+    maxWidth:"700px",
+    backdropFilter: "blur(4px)",
+    zIndex:"10",
     
   },
 };
 
+const iframeStyle = {
+  borderWidth: 0,
+  width:'160px', 
+  height:'160px',
+  margin: "none",
+}
 
 export default function Index({data}) {
 
@@ -47,8 +54,9 @@ export default function Index({data}) {
   return (
     <Layout>
       <center style={{marginTop:'25vh'}}>
-        <button onClick={openModal} className={styles.modalButton} >
-          <StaticImage 
+        <iframe title="button" style={iframeStyle} src="https://preview.p5js.org/dorajackcui/embed/SMxp5xTQ1"></iframe>
+
+          {/* <StaticImage 
             alt="magic" 
             src="../../static/magic.png"
             placeholder= 'none'
@@ -57,7 +65,8 @@ export default function Index({data}) {
             imgStyle={{borderRadius:'50%'}}
             width={160}
             height={160}
-            />
+            /> */}
+        <button onClick={openModal} className={styles.modalButton} > 
         </button>
       </center>
 

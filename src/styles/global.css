@@ -71,7 +71,7 @@ a {
 
 .active-page {
   background: rgb(65,64,64);
-  background: linear-gradient(270deg, rgba(65,64,64,0.8) 0%, rgba(172,172,172,1) 67%);  
+  background: linear-gradient(320deg, rgba(65,64,64,0.8) 0%, rgba(172,172,172,1) 67%);  
   
   /* background-color: red; */
 }
