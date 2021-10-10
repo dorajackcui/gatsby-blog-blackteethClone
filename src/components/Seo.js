@@ -32,8 +32,8 @@ const Seo= ({description, title}) => {
       <meta name="referrer" content="no-referrer"/>
       <link rel="icon" 
       type="image/png" 
-      href="/magic_medium.png"/>
-      <meta property="og:image" content="https://cui-blog.netlify.app/magic_medium.png" />
+      href="/magic.png"/>
+      <meta property="og:image" content="https://cui-blog.netlify.app/magic.png" />
       {metaTitle && <meta property="og:title" content={metaTitle} />}
       {metaDescription && (
         <meta property="og:description" content={metaDescription} />
