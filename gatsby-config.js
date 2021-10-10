@@ -13,6 +13,17 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `cui zhiyang's blog`,
+        short_name: `Yizhi blog`,
+        start_url: `/`,
+        background_color: `#FFFDFA`,
+        display: `standalone`,
+        icon: `static/magic.png`
+      },
+    },  
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
