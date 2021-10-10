@@ -33,6 +33,7 @@ const Seo= ({description, title}) => {
       <link rel="icon" 
       type="image/png" 
       href="/magic.png"/>
+      <meta property="og:image" content="../../static/magic.png" />
       {metaTitle && <meta property="og:title" content={metaTitle} />}
       {metaDescription && (
         <meta property="og:description" content={metaDescription} />
