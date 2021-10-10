@@ -8,9 +8,12 @@ const pageStyles = {
 }
 const iframeStyle = {
   borderWidth: 0,
-  width:'830px', 
+  width:'850px', 
   height:'500px',
-  margin: "50px auto",
+  margin: "50px auto 50px auto",
+  position:"relative",
+  right:"50px"
+  
 }
 const contact = {
   display:"flex",
