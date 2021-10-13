@@ -106,6 +106,25 @@ hr {
 
 /* modal style */
 
+/* .Modal{
+  position: absolute;
+  inset: 0px;
+  margin: 10% auto 4%;
+  border-radius:0;
+  border:none;
+  background-color: rgba(255, 253, 250, 0.75);
+  width:90%;
+  max-width:700px;
+  backdrop-filter: blur(4px);
+  z-index:10;
+}
+
+.Overlay {
+  position: fixed;
+  inset: 0px;
+  background-color: none;
+} */
+
 .modalButton {
   height:160px;
   width:160px;

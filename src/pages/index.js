@@ -20,8 +20,7 @@ const customStyles = {
     width:"90%",
     maxWidth:"700px",
     backdropFilter: "blur(4px)",
-    zIndex:"10",
-    
+    zIndex:"10",    
   },
 };
 
@@ -74,6 +73,8 @@ export default function Index({data}) {
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}
         onRequestClose={closeModal}
+        // className={styles.Modal}
+        // overlayClassName={styles.Overlay}
         style={customStyles}
         contentLabel="Modal"
       >
