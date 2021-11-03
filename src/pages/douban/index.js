@@ -39,9 +39,8 @@ export default function douban({data}) {
       nodes {
         frontmatter {
           title
-          
           slug
-          date(fromNow: true)
+          date(formatString: "DD MMMM YYYY")
         }
       }
     }
