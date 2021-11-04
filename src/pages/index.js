@@ -5,7 +5,6 @@ import Modal from 'react-modal'
 import { graphql } from 'gatsby'
 import * as styles from '../styles/details.module.css'
 
-
 const customStyles = {
   overlay: {
     backgroundColor: 'none'
@@ -65,6 +64,7 @@ export default function Index({data}) {
             width={160}
             height={160}
             /> */}
+        
         <button onClick={openModal} className={styles.modalButton} > 
         </button>
       </center>
