@@ -52,20 +52,10 @@ export default function Index({data}) {
   return (
     <Layout>
       <center style={{marginTop:'25vh'}}>
-        <iframe title="button" style={iframeStyle} src="https://preview.p5js.org/dorajackcui/embed/SMxp5xTQ1"></iframe>
-
-          {/* <StaticImage 
-            alt="magic" 
-            src="../../static/magic.png"
-            placeholder= 'none'
-            loading='lazy'
-            layout="fixed"
-            imgStyle={{borderRadius:'50%'}}
-            width={160}
-            height={160}
-            /> */}
+        {/* <iframe title="button" style={iframeStyle} src="https://preview.p5js.org/dorajackcui/embed/SMxp5xTQ1"></iframe> */}
         
         <button onClick={openModal} className={styles.modalButton} > 
+          magic in progress
         </button>
       </center>
 
