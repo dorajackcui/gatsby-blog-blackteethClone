@@ -3,7 +3,7 @@ import Sketch from 'react-p5'
 
 function ModalButton() {
   
-  let bgc, col
+  let bgc, col, step
   const setup = (p5, canvasParentRef) => {
  
     p5.createCanvas(160, 160).parent(canvasParentRef)
@@ -15,16 +15,16 @@ function ModalButton() {
     }
   // bgc = random(blueColors)
   // col = random(mulCols)
-  
+    step = p5.random(100)
   }
   
   const draw = p5 => {
     p5.frameRate(60)
     p5.background(bgc); 
     
-    let step = p5.random(100)
-    let stepInc = 0.003
-    let hinc = 0.01
+    
+    let stepInc = 0.004
+    let hinc = 0.02
 
     p5.noStroke()  
     // Draw Shape

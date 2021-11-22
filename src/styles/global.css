@@ -106,8 +106,6 @@ footer {
   border: solid 1px black;
 }
 
-
-
 /* mobile screen */
 @media screen and (max-width: 1024px){
   nav li{

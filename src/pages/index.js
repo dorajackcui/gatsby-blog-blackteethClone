@@ -1,6 +1,7 @@
 // import { StaticImage } from 'gatsby-plugin-image'
 import React, {useState} from 'react'
 import Layout from '../components/Layout'
+
 import Modal from 'react-modal'
 import { graphql } from 'gatsby'
 import * as styles from '../styles/details.module.css'
@@ -22,13 +23,6 @@ const customStyles = {
     zIndex:"10",    
   },
 };
-
-const iframeStyle = {
-  borderWidth: 0,
-  width:'160px', 
-  height:'160px',
-  margin: "none",
-}
 
 export default function Index({data}) {
 
@@ -52,11 +46,11 @@ export default function Index({data}) {
   return (
     <Layout>
       <center style={{marginTop:'25vh'}}>
-        {/* <iframe title="button" style={iframeStyle} src="https://preview.p5js.org/dorajackcui/embed/SMxp5xTQ1"></iframe> */}
         
-        <button onClick={openModal} className={styles.modalButton} > 
+        <button onClick={openModal} className={styles.modalButton}>
           magic in progress
         </button>
+                  
       </center>
 
       <Modal 
