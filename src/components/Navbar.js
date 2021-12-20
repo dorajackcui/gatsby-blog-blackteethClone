@@ -11,7 +11,7 @@ export default function Navbar() {
          <Link className="link" activeClassName="active-page" to="/">Home</Link>
         </li>
         <li key="traductions">
-          <Link className="link" activeClassName="active-page" to="/articles">Traductions</Link>
+          <Link className="link" activeClassName="active-page" to="/traductions">Traductions</Link>
         </li>
         <li key="archive">
           <Link className="link" activeClassName="active-page" to="/douban"> Douban Archive </Link>

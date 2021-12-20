@@ -13,7 +13,7 @@ function index({data}) {
       <main>
         <section className={styles.articlesContainer}>
         {articles.map( article => (
-          <Link to={"/articles/" + article.frontmatter.slug} key={article.frontmatter.slug} className={styles.article}>
+          <Link to={"/traductions/" + article.frontmatter.slug} key={article.frontmatter.slug} className={styles.article}>
             
             <div className={styles.articleTitle}>
               {article.frontmatter.title}
