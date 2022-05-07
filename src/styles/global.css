@@ -106,6 +106,15 @@ footer {
   border: solid 1px black;
 }
 
+
+.reading-progress-bar {
+  position: sticky;
+  height: 8px;
+  top: 0;
+  background-color: #6E7C45;
+}
+
+
 /* mobile screen */
 @media screen and (max-width: 1024px){
   nav li{
