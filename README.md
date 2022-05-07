@@ -1,5 +1,6 @@
 ## [Gatsby Blog Cui](https://cui-blog.netlify.app/)
 
+- [x] reading progress bar
 - [x] mobile responsive
 - [x] seo 
 - [x] format design -> ch/en mixed format ?
