@@ -25,7 +25,7 @@ export default function ReadingProgressBar ({target}){
     
     
     setReadingProgress((windowScrollTop / totalHeight) * 100);
-    console.log(windowScrollTop,totalHeight);
+    // console.log(windowScrollTop,totalHeight);
   }
 
   React.useEffect(() => {
