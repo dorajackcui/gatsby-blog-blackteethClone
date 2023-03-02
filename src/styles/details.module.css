@@ -143,11 +143,13 @@ hr {
   left:-webkit-calc(50% - 80px);
   left:-moz-calc(50% - 80px);
   left:calc(50% - 80px);
+  transition: all 0.2s ease-in-out;
+
 }
 
 /* modalButton Animation */
 .modalButton:hover {
-  box-shadow: -2px -2px 5px whitesmoke, 2px 2px 5px whitesmoke;
+  box-shadow: -5px -5px 20px whitesmoke, 5px 5px 20px whitesmoke;
 }
 
 
