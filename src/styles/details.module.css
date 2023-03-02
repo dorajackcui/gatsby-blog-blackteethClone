@@ -137,7 +137,7 @@ hr {
   width:160px;
   border-radius: 50%;
   border:none;
-  background: linear-gradient(225deg, #f0f0f0, #cacaca);
+  background: linear-gradient(225deg, #f0f0f0, --bg);
   background-color:inherit;
   cursor:pointer;
   position:fixed;
