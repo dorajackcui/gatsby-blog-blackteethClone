@@ -137,7 +137,6 @@ hr {
   width:160px;
   border-radius: 50%;
   border:none;
-  background: linear-gradient(225deg, #f0f0f0, --bg);
   background-color:inherit;
   cursor:pointer;
   position:fixed;
@@ -150,7 +149,7 @@ hr {
 
 /* modalButton Animation */
 .modalButton:hover {
-  box-shadow: -22px 22px 43px #c5c5c5, 22px -22px 43px #fbfbfb;
+  box-shadow: -2px -2px 10px whitesmoke, 2px 2px 10px snow;
 }
 
 
