@@ -136,7 +136,7 @@ hr {
   height:160px;
   width:160px;
   border-radius: 50%;
-  /* border:none; */
+  border:none;
   background-color:inherit;
   cursor:pointer;
   position:fixed;
@@ -147,26 +147,7 @@ hr {
 
 /* modalButton Animation */
 .modalButton:hover {
-  animation: border .5s ease forwards;
-}
-
-
-@keyframes border{
-  0% {
-    box-shadow: 60px -60px 0 2px black, -60px -60px 0 2px black, -60px 60px 0 2px black, 60px 60px 0 2px black, 0 0 0 2px transparent;
-  }
-  25% {
-    box-shadow: 0 -125px 0 2px black, -60px -60px 0 2px black, -60px 60px 0 2px black, 60px 60px 0 2px black, 0 0 0 2px #fff;
-  }
-  50% {
-    box-shadow: 0 -125px 0 2px black, -125px 0px 0 2px black, -60px 60px 0 2px black, 60px 60px 0 2px black, 0 0 0 2px #fff;
-  }
-  75% {
-    box-shadow: 0 -125px 0 2px black, -125px 0px 0 2px black, 0px 125px 0 2px black, 60px 60px 0 2px black, 0 0 0 2px #fff;
-  }
-  100% {
-    box-shadow: 0 -125px 0 2px black, -125px 0px 0 2px black, 0px 125px 0 2px black, 120px 40px 0 2px black, 0 0 0 2px #fff;
-  } 
+  box-shadow: -2px -2px 5px whitesmoke, 2px 2px 5px whitesmoke;
 }
 
 
