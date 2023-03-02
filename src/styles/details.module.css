@@ -136,7 +136,7 @@ hr {
   height:160px;
   width:160px;
   border-radius: 50%;
-  border:none;
+  /* border:none; */
   background-color:inherit;
   cursor:pointer;
   position:fixed;
@@ -168,8 +168,6 @@ hr {
     box-shadow: 0 -125px 0 2px black, -125px 0px 0 2px black, 0px 125px 0 2px black, 120px 40px 0 2px black, 0 0 0 2px #fff;
   } 
 }
-
-
 
 
 .modalContent {
