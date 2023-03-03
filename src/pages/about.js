@@ -20,8 +20,7 @@ const contact = {
 }
 
 const container = {
-  height: "90%",
-  overflowY: "scroll",
+ 
 }
 
 export default function about() {
