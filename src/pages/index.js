@@ -16,7 +16,7 @@ const customStyles = {
     margin:" 10% auto 4%",
     borderRadius:"0",
     border:'none',
-    backgroundColor: 'rgba(255, 253, 250, 0.75)',
+    backgroundColor: 'inherit',
     width:"90%",
     maxWidth:"700px",
     backdropFilter: "blur(4px)",
