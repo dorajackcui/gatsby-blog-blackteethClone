@@ -23,7 +23,7 @@ export default function about() {
 
   useLayoutEffect(() => {
     const element = document.getElementsByClassName("nav preview-nav");
-    element.remove();
+    print(element);
   })
 
 
