@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import { useRef, useLayoutEffect } from 'react'
+// import {useLayoutEffect } from 'react'
 
 // styles
 const pageStyles = { 
@@ -21,10 +21,10 @@ const contact = {
 
 export default function about() {
 
-  useLayoutEffect(() => {
-    const element = document.getElementsByClassName("nav preview-nav");
-    print(element);
-  })
+  // useLayoutEffect(() => {
+  //   const element = document.getElementsByClassName("nav preview-nav");
+  //   print(element);
+  // })
 
 
   return (
