@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import { useRef, useEffect } from 'react'
+import { useRef, useLayoutEffect } from 'react'
 
 // styles
 const pageStyles = { 
@@ -21,9 +21,8 @@ const contact = {
 
 export default function about() {
 
-  const iFrameElements = useRef(null);
-  useEffect(() => {
-    const element = iFrameElements.getElementsByClassName("nav preview-nav");
+  useLayoutEffect(() => {
+    const element = document.getElementsByClassName("nav preview-nav");
     element.remove();
   })
 
@@ -33,7 +32,7 @@ export default function about() {
       <main style={pageStyles}>
 
         
-        <iframe ref={iFrameElements} title="flocking_poem" style={iframeStyle}  src="https://preview.p5js.org/dorajackcui/embed/k945StYw1"></iframe>  
+        <iframe title="flocking_poem" style={iframeStyle}  src="https://preview.p5js.org/dorajackcui/embed/k945StYw1"></iframe>  
         
         <div style={contact}>
     
