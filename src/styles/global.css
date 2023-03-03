@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap');
 
 :root{
-  --bg:#FFFDFA;
+  /* --bg:#FFFDFA; */
+  --bg:#e0e0e0;
 }
 
 *{
