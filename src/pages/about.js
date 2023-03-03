@@ -19,9 +19,6 @@ const contact = {
   display:"flex",
 }
 
-const container = {
- 
-}
 
 export default function about() {
 
@@ -35,9 +32,9 @@ export default function about() {
     <Layout>
       <main style={pageStyles}>
 
-        <div style ={container}>
-          <iframe title="flocking_poem" style={iframeStyle}  src="https://preview.p5js.org/dorajackcui/embed/k945StYw1"></iframe>  
-        </div>
+        
+        <iframe title="flocking_poem" style={iframeStyle}  src="https://preview.p5js.org/dorajackcui/embed/k945StYw1"></iframe>  
+       
         
         <div style={contact}>
     
