@@ -19,6 +19,11 @@ const contact = {
   display:"flex",
 }
 
+const container = {
+  height: "90%",
+  overflowY: "scroll",
+}
+
 export default function about() {
 
   // useLayoutEffect(() => {
@@ -31,8 +36,9 @@ export default function about() {
     <Layout>
       <main style={pageStyles}>
 
-        
-        <iframe title="flocking_poem" style={iframeStyle}  src="https://preview.p5js.org/dorajackcui/embed/k945StYw1"></iframe>  
+        <div style ={container}>
+          <iframe title="flocking_poem" style={iframeStyle}  src="https://preview.p5js.org/dorajackcui/embed/k945StYw1"></iframe>  
+        </div>
         
         <div style={contact}>
     
