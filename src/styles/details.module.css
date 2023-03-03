@@ -159,6 +159,7 @@ hr {
   padding-right: 5%;
   margin-top: 25px;
   font-weight: 400;
+  background: inherit;
 }
 
 .modalContent > * {
