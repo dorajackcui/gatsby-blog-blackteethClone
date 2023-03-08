@@ -26,11 +26,11 @@ const customStyles = {
 };
 
 export default function Index({data}) {
-  const { transform } = useSpring({
-    loop: true,
-    from: { transform: 'rotate(0deg)' },
-    to: { transform: 'rotate(360deg)' },
-  })
+  // const { transform } = useSpring({
+  //   loop: true,
+  //   from: { transform: 'rotate(0deg)' },
+  //   to: { transform: 'rotate(360deg)' },
+  // })
 
 
   const {html} = data.markdownRemark
@@ -60,9 +60,10 @@ export default function Index({data}) {
           magic in progress
         </button> */}
         {/* new BUTTON */}
-        <animated.div style={{
+        <animated.div>
+        {/* style={{
            transform: transform.interpolate(t => `${t} rotateY(180deg)`),
-        }}>
+        }} */}
         <button onClick={openModal} className={styles.modalButton}>
         {/* dangerouslySetInnerHTML={{ __html: html }} */}
           <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
