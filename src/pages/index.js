@@ -52,29 +52,29 @@ export default function Index({data}) {
         </button> */}
         {/* new BUTTON */}
         <button onClick={openModal} className={styles.modalButton}>
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500" dangerouslySetInnerHTML={{ __html: html }}>
-          <title>magic</title>
-          <defs>
-          <path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" id="textcircle">
-            <animateTransform
-                    attributeName="transform"
-                    begin="0s"
-                    dur="30s"
-                    type="rotate"
-                    from="0 250 250"
-                    to="360 250 250"
-                    repeatCount="indefinite" 
-              />
-            {/* <!-- SMIL animation: deprecated in Chrome, so eventually will have to be replaced with Web Animation API or alternative --> */}
-          </path>
-          
-          </defs>
-          
-          <text dy="70" textLength="1220">
-            {/* <!-- textLength (essentially the circumference of the circle) is used as an alternative to letter-spacing for Firefox, which currently doesn't support letter-spacing for SVG --> */}
-            <textPath xlink:href="#textcircle">magicinprogress</textPath>
-          </text>
-        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+    <title>magic</title>
+    <defs>
+      <path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" id="textcircle">
+        <animateTransform
+          attributeName="transform"
+          begin="0s"
+          dur="30s"
+          type="rotate"
+          from="0 250 250"
+          to="360 250 250"
+          repeatCount="indefinite"
+        />
+        {/* SMIL animation: deprecated in Chrome, so eventually will have to be replaced with Web Animation API or alternative */}
+      </path>
+    </defs>
+    <text dy="70" textLength="1220">
+      {/* textLength (essentially the circumference of the circle) is used as an alternative to letter-spacing for Firefox, which currently doesn't support letter-spacing for SVG */}
+      <textPath xlinkHref="#textcircle">magicinprogress</textPath>
+    </text>
+    {/* Use dangerouslySetInnerHTML to set the inner HTML */}
+    <g dangerouslySetInnerHTML={{ __html: html }} />
+  </svg>
         </button>
                   
       </center>
