@@ -175,12 +175,12 @@ hr {
   fill: #fe0304;
 }
 .modalButton text {
-  font-size: 63px;
+  font-size: 68px;
   font-family: "Noto Serif SC", serif;
   font-weight: 700;
   /* text-transform: uppercase; */
   letter-spacing: 20px;
-  fill: black;
+  fill:#cc99ff;
 }
 
 /* modalButton Animation */
