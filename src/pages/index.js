@@ -26,6 +26,11 @@ const customStyles = {
 };
 
 export default function Index({data}) {
+  const props = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+  })
+
 
   const {html} = data.markdownRemark
 
@@ -54,7 +59,7 @@ export default function Index({data}) {
           magic in progress
         </button> */}
         {/* new BUTTON */}
-        <animated.div>
+        <animated.div style={props}>
         <button onClick={openModal} className={styles.modalButton}>
           <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
     <title>magic</title>
