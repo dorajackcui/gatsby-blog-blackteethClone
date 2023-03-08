@@ -144,7 +144,32 @@ hr {
   left:-moz-calc(50% - 80px);
   left:calc(50% - 80px);
   transition: all 0.2s ease-in-out;
+}
 
+.modalButton body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  text-align: center;
+}
+.modalButton svg {
+ 
+  transform: translate(-20px, -20px);
+  -webkit-transform: translateX(-20px, -20px);
+  -ms-transform: translateX(-20px, -20px);
+
+  width: 200px;
+}
+.modalButton rect {
+  fill: #fe0304;
+}
+.modalButton text {
+  font-size: 63px;
+  font-family: "Noto Serif SC", serif;
+  font-weight: 700;
+  /* text-transform: uppercase; */
+  letter-spacing: 20px;
+  fill: black;
 }
 
 /* modalButton Animation */
