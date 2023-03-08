@@ -27,8 +27,9 @@ const customStyles = {
 
 export default function Index({data}) {
   const props = useSpring({
-    from: { opacity: 0 },
-    to: { opacity: 1 },
+    loop: true,
+    from: { transform: 'rotate(0deg)' },
+    to: { transform: 'rotate(360deg)' },
   })
 
 
@@ -61,6 +62,7 @@ export default function Index({data}) {
         {/* new BUTTON */}
         <animated.div style={props}>
         <button onClick={openModal} className={styles.modalButton}>
+        {/* dangerouslySetInnerHTML={{ __html: html }} */}
           <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
     <title>magic</title>
     <defs>
@@ -81,8 +83,7 @@ export default function Index({data}) {
       {/* textLength (essentially the circumference of the circle) is used as an alternative to letter-spacing for Firefox, which currently doesn't support letter-spacing for SVG */}
       <textPath xlinkHref="#textcircle">magicinprogress</textPath>
     </text>
-    {/* Use dangerouslySetInnerHTML to set the inner HTML */}
-    <g dangerouslySetInnerHTML={{ __html: html }} />
+  
   </svg>
         </button>
         </animated.div>
