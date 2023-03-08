@@ -133,17 +133,19 @@ hr {
 } */
 
 .modalButton {
-  animation: rotate 2s linear infinite;
   height:160px;
   width:160px;
   border-radius: 50%;
   border:none;
+  padding: 0;
   background-color:inherit;
   cursor:pointer;
   position:fixed;
   left:-webkit-calc(50% - 80px);
   left:-moz-calc(50% - 80px);
   left:calc(50% - 80px);
+  transform-origin: 50% 50%;
+  animation: rotate 8s linear infinite;
   transition: box-shadow 0.2s ease-in-out;
 }
 
