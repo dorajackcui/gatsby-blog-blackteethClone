@@ -1,6 +1,7 @@
 // import { StaticImage } from 'gatsby-plugin-image'
 import React, {useState} from 'react'
 import Layout from '../components/Layout'
+import { useSpring, animated } from '@react-spring/web'
 
 import Modal from 'react-modal'
 import { graphql } from 'gatsby'
@@ -30,7 +31,9 @@ export default function Index({data}) {
 
   const [modalIsOpen, setIsOpen] = useState(false);
 
-  function openModal() {
+  function openModal(e) {
+    console.log('biu')
+    e.preventDefault();
     setIsOpen(true);
   }
 
@@ -51,8 +54,9 @@ export default function Index({data}) {
           magic in progress
         </button> */}
         {/* new BUTTON */}
+        <animated.div>
         <button onClick={openModal} className={styles.modalButton}>
-        <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
     <title>magic</title>
     <defs>
       <path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" id="textcircle">
@@ -76,6 +80,8 @@ export default function Index({data}) {
     <g dangerouslySetInnerHTML={{ __html: html }} />
   </svg>
         </button>
+        </animated.div>
+       
                   
       </center>
 
