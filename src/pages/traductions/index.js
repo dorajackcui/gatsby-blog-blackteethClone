@@ -4,7 +4,7 @@ import * as styles from '../../styles/articles.module.css'
 import { Link, graphql } from 'gatsby'
 
 
-function index({data}) {
+function index({ data }) {
 
   const articles = data.allMarkdownRemark.nodes
 
@@ -12,18 +12,18 @@ function index({data}) {
     <Layout>
       <main>
         <section className={styles.articlesContainer}>
-        {articles.map( article => (
-          <Link to={"/traductions/" + article.frontmatter.slug} key={article.frontmatter.slug} className={styles.article}>
-            
-            <div className={styles.articleTitle}>
-              {article.frontmatter.title}
-            </div>
-            <div className={styles.articleDetails}>
-              {article.frontmatter.author}  
-            </div>
-            
-          </Link>
-        ))}
+          {articles.map(article => (
+            <Link to={"/traductions/" + article.frontmatter.slug} key={article.frontmatter.slug} className={styles.article}>
+
+              <div className={styles.articleTitle}>
+                {article.frontmatter.title}
+              </div>
+              <div className={styles.articleDetails}>
+                {article.frontmatter.author}
+              </div>
+
+            </Link>
+          ))}
 
         </section>
       </main>

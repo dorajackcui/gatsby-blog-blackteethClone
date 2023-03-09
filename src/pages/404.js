@@ -6,9 +6,9 @@ import Layout from '../components/Layout'
 
 
 const paragraphStyles = {
-  marginTop:'3rem',
-  display:'flex',
-  flexDirection: 'column', 
+  marginTop: '3rem',
+  display: 'flex',
+  flexDirection: 'column',
 }
 
 // markup

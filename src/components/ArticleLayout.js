@@ -18,15 +18,15 @@ export default function Layout({ description, title, children }) {
   // `)
   // const { copyright } = data.site.siteMetadata
 
-  
+
   const target = React.createRef()
   return (
     <div className="layout">
-      <Seo title={title} description={description}/>
+      <Seo title={title} description={description} />
       <ReadingProgressBar target={target} />
       <BackHome />
       <div className="content" ref={target}>
-        { children }
+        {children}
       </div>
       {/* <div> { copyright } </div> */}
     </div>

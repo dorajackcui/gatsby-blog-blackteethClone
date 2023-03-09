@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 
-export default function ReadingProgressBar ({target}){
+export default function ReadingProgressBar({ target }) {
   const [readingProgress, setReadingProgress] = useState(0)
 
   const scrollListener = () => {
@@ -14,16 +14,16 @@ export default function ReadingProgressBar ({target}){
       return;
     }
     const windowScrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
-    
+
     if (windowScrollTop === 0) {
       return setReadingProgress(0);
     }
-    
+
     if (windowScrollTop > totalHeight) {
       return setReadingProgress(100);
     }
-    
-    
+
+
     setReadingProgress((windowScrollTop / totalHeight) * 100);
     // console.log(windowScrollTop,totalHeight);
   }
@@ -34,7 +34,7 @@ export default function ReadingProgressBar ({target}){
   })
 
   return (
-    <div className={`reading-progress-bar`} style={{width: `${readingProgress}%` }} />
+    <div className={`reading-progress-bar`} style={{ width: `${readingProgress}%` }} />
   )
 }
 

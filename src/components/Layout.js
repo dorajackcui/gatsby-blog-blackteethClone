@@ -16,15 +16,15 @@ export default function Layout({ description, children, title }) {
   //   }
   // `)
   // const { copyright } = data.site.siteMetadata
-  
-  
+
+
   return (
 
     <div className="layout">
-      <Seo title={title} description={description}/>
+      <Seo title={title} description={description} />
       <Navbar />
       <div className="content">
-        { children }
+        {children}
       </div>
       {/* <div> { copyright } </div> */}
     </div>

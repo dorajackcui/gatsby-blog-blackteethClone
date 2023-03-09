@@ -8,7 +8,7 @@ export default function Navbar() {
     <nav>
       <ul>
         <li className="home" key="home">
-         <Link className="link" activeClassName="active-page" to="/">Home</Link>
+          <Link className="link" activeClassName="active-page" to="/">Home</Link>
         </li>
         <li key="traductions">
           <Link className="link" activeClassName="active-page" to="/traductions">Traductions</Link>
