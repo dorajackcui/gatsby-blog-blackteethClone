@@ -69,7 +69,7 @@ export default function Index({ data }) {
         }} */}
           <button onClick={openModal} className={styles.modalButton}>
             {/* dangerouslySetInnerHTML={{ __html: html }} */}
-            <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+            <svg xmlns="http://www.w3.org/2000/svg" xlinkHref="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
               <title>magic</title>
               <defs>
                 <path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" id="textcircle">
@@ -89,7 +89,6 @@ export default function Index({ data }) {
                 {/* textLength (essentially the circumference of the circle) is used as an alternative to letter-spacing for Firefox, which currently doesn't support letter-spacing for SVG */}
                 <textPath xlinkHref="#textcircle">magicinprogress</textPath>
               </text>
-
             </svg>
           </button>
         </animated.div>
