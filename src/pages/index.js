@@ -21,6 +21,7 @@ const customStyles = {
     width: "90%",
     maxWidth: "700px",
     backdropFilter: "blur(4px)",
+    webkitBackdropFilter: "blur(4px)",
     zIndex: "10",
     boxShadow: "10px 10px 50px #bebebe, -10px -10px 50px #ffffff",
   },
