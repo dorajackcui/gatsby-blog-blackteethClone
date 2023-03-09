@@ -23,7 +23,7 @@ const customStyles = {
     backdropFilter: "blur(4px)",
     webkitBackdropFilter: "blur(4px)",
     zIndex: "10",
-    boxShadow: "10px 10px 50px #bebebe, -10px -10px 50px #ffffff",
+    // boxShadow: "10px 10px 50px #bebebe, -10px -10px 50px #ffffff",
   },
 };
 
@@ -85,7 +85,7 @@ export default function Index({ data }) {
                   {/* SMIL animation: deprecated in Chrome, so eventually will have to be replaced with Web Animation API or alternative */}
                 </path>
               </defs>
-              <text dy="70" textLength="1220">
+              <text dy="70" textLength="1220" lengthAdjust="spacing">
                 {/* textLength (essentially the circumference of the circle) is used as an alternative to letter-spacing for Firefox, which currently doesn't support letter-spacing for SVG */}
                 <textPath xlinkHref="#textcircle">magicinprogress</textPath>
               </text>
