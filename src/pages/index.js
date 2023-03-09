@@ -15,13 +15,14 @@ const customStyles = {
     position: 'absolute',
     inset: '0px',
     margin: " 10% auto 4%",
-    borderRadius: "0",
+    borderRadius: "2% 0 0 2%",
     border: 'none',
     backgroundColor: 'inherit',
     width: "90%",
     maxWidth: "700px",
     backdropFilter: "blur(4px)",
     zIndex: "10",
+    boxShadow: "10px 10px 50px #bebebe, -10px -10px 50px #ffffff",
   },
 };
 
