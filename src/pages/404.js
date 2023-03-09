@@ -17,7 +17,11 @@ const NotFoundPage = () => {
     <Layout>
       <h1>Vertige de la liste</h1>
       <div style={paragraphStyles}>
-        <a href="https://www.notion.so/e6fa57bb62204951bfc113371c989114" target="_blank" rel="noreferrer">一些游戏网站</a>
+        <a href="https://www.notion.so/e6fa57bb62204951bfc113371c989114"
+          target="_blank"
+          rel="noreferrer">
+          一些游戏网站
+        </a>
       </div>
     </Layout>
   )

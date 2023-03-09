@@ -25,6 +25,7 @@ const customStyles = {
   },
 };
 
+
 export default function Index({data}) {
   // const { transform } = useSpring({
   //   loop: true,
