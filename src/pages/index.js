@@ -87,7 +87,7 @@ export default function Index({ data }) {
               </defs>
               <text dy="70" textLength="1220" lengthAdjust="spacing">
                 {/* textLength (essentially the circumference of the circle) is used as an alternative to letter-spacing for Firefox, which currently doesn't support letter-spacing for SVG */}
-                <textPath xlinkHref="#textcircle">magicinprogress</textPath>
+                <textPath xlinkHref="#textcircle">Magic~in~Progress~</textPath>
               </text>
             </svg>
           </button>
