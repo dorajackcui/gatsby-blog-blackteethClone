@@ -36,7 +36,7 @@ export default function Index({ data }) {
   // })
 
 
-  const { html } = data.markdownRemark
+  const html = data?.markdownRemark?.html || ""
 
   const [modalIsOpen, setIsOpen] = useState(false);
 

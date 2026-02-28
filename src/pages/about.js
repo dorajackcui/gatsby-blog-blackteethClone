@@ -22,6 +22,8 @@ const contact = {
 
 export default function about() {
 
+  const isBrowser = typeof window !== 'undefined'
+
   // useLayoutEffect(() => {
   //   const element = document.getElementsByClassName("nav preview-nav");
   //   print(element);
@@ -33,7 +35,9 @@ export default function about() {
       <main style={pageStyles}>
 
 
-        <iframe title="flocking_poem" style={iframeStyle} src="https://preview.p5js.org/dorajackcui/embed/k945StYw1"></iframe>
+        {isBrowser ? (
+          <iframe title="flocking_poem" style={iframeStyle} src="https://preview.p5js.org/dorajackcui/embed/k945StYw1"></iframe>
+        ) : null}
 
 
         <div style={contact}>
